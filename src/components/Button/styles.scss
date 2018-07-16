@@ -1,0 +1,10 @@
+.button{
+  padding: 10px;
+  &:hover{
+    color:lighten( green, 10% );
+    cursor: pointer;
+  }
+  &:active{
+    color:darken( green, 10% );
+  }
+}

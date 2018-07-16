@@ -1,0 +1,27 @@
+@import 'bootstrap.scss';
+
+@import "./fontawesome-free/fontawesome.scss";
+@import "./fontawesome-free/scss/fa-solid.scss";
+@import "./fontawesome-free/scss/fa-brands.scss";
+@import "./fontawesome-free/scss/fa-regular.scss";
+
+.user {
+  @include fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.twitter {
+  @include fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
+
+
+@import '../components/components.scss';
